@@ -3,7 +3,8 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
   entry: {
-    checkout: './public/checkout/index.js',
+    // TODO: optimize: split vendor to avoid big size
+    checkout: './public/checkout/index.js', // each page a script
     dashboard: './public/dashboard/index.js'
   },
   output: {
@@ -11,13 +12,13 @@ module.exports = {
     filename: '[name].js'
   },
   plugins: [
-    new CleanWebpackPlugin()
+    new CleanWebpackPlugin() // Clean the dist folder
   ],
   module: {
     rules: [{
       test: /\.(js|jsx)$/,
       exclude: /node_modules/,
-      loader: 'babel-loader'
+      loader: 'babel-loader' // Use babel to support react. see .babelrc
     }]
   }
 };
