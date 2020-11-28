@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Checkout from './Checkout';
+import LikeButton from '../common/LikeButton';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Checkout />
+    <LikeButton />
   </React.StrictMode>,
-  document.getElementById('checkout')
+  document.getElementById('like')
 );

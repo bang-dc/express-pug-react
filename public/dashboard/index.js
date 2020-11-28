@@ -1,10 +1,11 @@
+import './toto.css'
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Dashboard from './Dashboard';
+import LikeButton from '../common/LikeButton';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Dashboard />
+    <LikeButton />
   </React.StrictMode>,
-  document.getElementById('dashboard')
+  document.getElementById('like')
 );
