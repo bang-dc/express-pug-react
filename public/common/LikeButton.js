@@ -1,4 +1,4 @@
-import 'semantic-ui-css/semantic.css'
+import 'semantic-ui-css/semantic.min.css'
 import React from 'react';
 
 export default function LikeButton(props) {
